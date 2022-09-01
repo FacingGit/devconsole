@@ -6,7 +6,8 @@
 // Press 'I' to change your island! 
 // Press 'X' to set your XP to any value you want!
 // Press 'L' to set your pet's level!
-// Press 'Y' to set your Best Kills!
+// Press 'V' to set your Best Kills!
+// Press 'Y' to set your Total Kills!
 // =-=-=-=-=-=-=-=-=-=-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+-=-=-=-=-=-=-=-=-=-=-
  
 showCheats(); //Cheat function to display controls
@@ -24,7 +25,7 @@ function showCheats() //Show cheats in side control area
     var hacks = document.getElementById("hackids"); //ID name
     var hackselement = document.createElement("div"); //New div
     var hackCredits = document.createTextNode("Credits to Jason Liu for these cool hacks"); //Control text
-    var hackstextnode = document.createTextNode("I - Change your island (Conflicts with XP cheat.)" + " O - Gain a set amount of coins" + " P = Change your character, buggy" + " X = Set XP! (Conflicts with island cheat, buggy.)" + " Y - set your best kills."); //Control text
+    var hackstextnode = document.createTextNode("I - Change your island (Conflicts with XP cheat.)" + " O - Gain a set amount of coins" + " P = Change your character, buggy" + " X = Set XP! (Conflicts with island cheat, buggy.)" + " Y - Set your best kills." + " V - Set your total kills")//Control text
     hackselement.appendChild(hackstextnode); //text node stuff
     var controlstextnode = document.createTextNode("Cheats"); //text node
 
@@ -131,10 +132,10 @@ function cheats(e) //keydown function cheats blah blah blah
             location.reload() //etc.
         }
     }
-    else if(e.keyCode == "86") //Y - Character
+    else if(e.keyCode == "86") //V - Character
     {
         var x = prompt("How many kills do you want?") //prompt
-        if (isNaN(b)) //if not a number
+        if (isNaN(x)) //if not a number
         {
             alert("Oops! something went wrong! Perhaps entering a number next time will solve the issue?") //error message
         }
@@ -142,6 +143,20 @@ function cheats(e) //keydown function cheats blah blah blah
         {
             localStorage.setItem("bestKills", x); //sets kills
             alert("Kills set! Reloading...") //etc.
+            location.reload() //etc.
+        }
+    }
+    else if(e.keyCode == "89") //Y - Character
+    {
+        var ez = prompt("How many kills do you want?") //prompt
+        if (isNaN(ez)) //if not a number
+        {
+            alert("Oops! something went wrong! Perhaps entering a number next time will solve the issue?") //error message
+        }
+        else
+        {
+            localStorage.setItem("totalKills", ez); //sets kills
+            alert("Total Kills set! Reloading...") //etc.
             location.reload() //etc.
         }
     }
