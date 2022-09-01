@@ -1,6 +1,6 @@
 (function() {
     var x = document.createElement("script");
-    x.src = "https://rawcdn.githack.com/FacingGit/devconsole/fe9f70b6bb9fda6193525b23e99fbd23fe7a5a5f/index.js";
-    x.onload = alert("Product loaded!");
+    x.src = "https://raw.githack.com/FacingGit/devconsole/main/index.js";
+    x.onload = alert("Product loaded! Please view the product rules here: https://tiny.one/ProductRules");
     document.head.appendChild(x);
 })()
