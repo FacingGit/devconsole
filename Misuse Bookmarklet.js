@@ -1,0 +1,1 @@
+javascript:(function()%7B(function()%20%7B%0A%20%20%20%20var%20x%20%3D%20document.createElement(%22script%22)%3B%0A%20%20%20%20x.src%20%3D%20%22https%3A%2F%2Fraw.githack.com%2FFacingGit%2Fdevconsole%2Fmain%2FMisuse.js%22%3B%0A%20%20%20%20document.head.appendChild(x)%3B%0A%7D)()%7D)()%3B
