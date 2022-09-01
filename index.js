@@ -24,10 +24,11 @@ function showCheats() //Show cheats in side control area
     var hacks = document.getElementById("hackids"); //ID name
     var hackselement = document.createElement("div"); //New div
     var hackCredits = document.createTextNode("Credits to Jason Liu for these cool hacks"); //Control text
-     var hackselement = document.createElement("div"); //New div
-    var hackstextnode = document.createTextNode("I - Change your island (Conflicts with XP cheat.)" + " O - Gain a set amount of coins" + " P = Change your character, buggy" + " X = Set XP! (Conflicts with island cheat, buggy.)" + "Press Y to set your best kills."); //Control text
+    var hackstextnode = document.createTextNode("I - Change your island (Conflicts with XP cheat.)" + " O - Gain a set amount of coins" + " P = Change your character, buggy" + " X = Set XP! (Conflicts with island cheat, buggy.)" + " Y - set your best kills."); //Control text
     hackselement.appendChild(hackstextnode); //text node stuff
     var controlstextnode = document.createTextNode("Cheats"); //text node
+
+    box.appendChild(hackCredits); //append child
     box.appendChild(controls); //append child
     box.appendChild(hackselement); //append child
 }
