@@ -148,7 +148,7 @@ function cheats(e) //keydown function cheats blah blah blah
     }
     else if(e.keyCode == "89") //Y - Character
     {
-        var ez = prompt("How many kills do you want?") //prompt
+        var ez = prompt("How many total kills do you want?") //prompt
         if (isNaN(ez)) //if not a number
         {
             alert("Oops! something went wrong! Perhaps entering a number next time will solve the issue?") //error message
