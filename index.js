@@ -6,8 +6,8 @@
 // Press 'I' to change your island! 
 // Press 'X' to set your XP to any value you want!
 // Press 'L' to set your pet's level!
-// Press 'V' to set your Best Kills!
-// Press 'Y' to set your Total Kills!
+// Press 'K' to set your Best Kills!
+// Press 'T' to set your Total Kills!
 // =-=-=-=-=-=-=-=-=-=-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+-=-=-=-=-=-=-=-=-=-=-
  
 showCheats(); //Cheat function to display controls
