@@ -25,7 +25,7 @@ function showCheats() //Show cheats in side control area
     var hacks = document.getElementById("hackids"); //ID name
     var hackselement = document.createElement("div"); //New div
     var hackCredits = document.createTextNode("Credits to Jason Liu for these cool hacks"); //Control text
-    var hackstextnode = document.createTextNode("I - Change your island (Conflicts with XP cheat.)" + " O - Gain a set amount of coins" + " P = Change your character, buggy" + " X = Set XP! (Conflicts with island cheat, buggy.)" + " Y - Set your best kills." + " V - Set your total kills")//Control text
+    var hackstextnode = document.createTextNode("I - Change your island (Conflicts with XP cheat.)" + " O - Gain a set amount of coins" + " P = Change your character, buggy" + " X = Set XP! (Conflicts with island cheat, buggy.)" + " K - Set your best kills." + " T - Set your total kills")//Control text
     hackselement.appendChild(hackstextnode); //text node stuff
     var controlstextnode = document.createTextNode("Cheats"); //text node
 
@@ -132,7 +132,7 @@ function cheats(e) //keydown function cheats blah blah blah
             location.reload() //etc.
         }
     }
-    else if(e.keyCode == "86") //V - Character
+    else if(e.keyCode == "75") //K - Best Kills
     {
         var x = prompt("How many kills do you want?") //prompt
         if (isNaN(x)) //if not a number
@@ -146,7 +146,7 @@ function cheats(e) //keydown function cheats blah blah blah
             location.reload() //etc.
         }
     }
-    else if(e.keyCode == "89") //Y - Character
+    else if(e.keyCode == "84") //T - Total Kills
     {
         var ez = prompt("How many total kills do you want?") //prompt
         if (isNaN(ez)) //if not a number
